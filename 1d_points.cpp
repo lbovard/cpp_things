@@ -49,13 +49,21 @@ int main() {
 	cout << &tt+1 << endl;
 	cout << &somevar << endl;
 	cout << "What happens if we increase the pointer value tt by 1?" << endl;
-	for(int j=0;j<10;j++) { 
+	for(int j=0;j<3;j++) { 
 	tt++;
 	cout << tt << "," << *tt << endl;
 	}
 	cout << "Be careful with this." << endl;
+	
+	double happy[10];
+	happy[0]=34.3;	
+	cout << happy[0] << endl;	
+	cout << happy << endl;
+	cout << &happy << endl;
+	// this is confusing imho
+	tt=happy;
+	cout << tt << endl;
+	cout << *tt << endl;
 	return 0;
-
-
 
 }
